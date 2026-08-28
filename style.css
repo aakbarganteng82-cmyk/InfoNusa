@@ -1076,3 +1076,9 @@ figcaption {
   }
 
 }
+
+/* Perbaikan posisi hero agar tidak tertutup navbar */
+#home {
+  padding-top: 100px;
+  box-sizing: border-box;
+}
