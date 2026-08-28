@@ -1,0 +1,1078 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  
+  --rf-brand: #FFA500;
+  --rf-brand-rgb: 255, 165, 0;
+  --rf-dark: #212237;
+  --rf-body: #989898;
+  --f-main: "Raleway", sans-serif;
+  --transition: all .6s cubic-bezier(.165, .84, .44, 1);
+  --shadow: 0px 15px 30px rgba(0, 0, 0, 0.1); 
+  
+
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+  body {
+    font-family: var(--f-main);
+    color: var(--rf-dark);
+    line-height: 1.8;
+  }
+
+h1, .h1 h2, .h2 h3, .h3 h4, .h4 h5, .h5 h6, .h6 {
+  font-weight: 700;
+  color:var(--rf-dark);
+  font-family: var(--f-main);
+  
+}
+.text-brand{
+  color:var(--rf-brand);
+}
+  .navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #212237;
+  border-bottom: 2px solid var(--rf-brand);
+  z-index: 1000;
+}
+
+.navbar .nav-link {
+  color: white;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--rf-brand);
+}
+
+
+.navbar.scrolled {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  border-bottom: 2px solid var(--rf-brand);
+}
+.navbar.scrolled .nav-link {
+  color: var(--rf-dark);
+}
+
+.navbar.scrolled .nav-link:hover,
+.navbar.scrolled .nav-link.active {
+  color: var(--rf-brand);
+}
+
+.navbar.scrolled .navbar-brand {
+  color: hwb;
+}
+
+.but {
+  background-color: var(--rf-brand);
+}
+
+#home {
+  position: relative;
+  background-color: #212237;
+  color: white;
+}
+
+#home .container {
+  position: relative;
+  z-index: 1;
+}
+
+#home h1 {
+  color: white;
+}
+
+#home h1 .text-brand {
+  color: #FFA500;
+}
+
+#home h4 {
+  color: white;
+}
+
+#home .container {
+  position: relative;
+  z-index: 1;
+}
+
+#home h1 {
+  color: white;
+}
+
+#home h1 .text-brand {
+  color: var(--rf-brand);
+}
+
+#home h4 {
+  color: white;
+}
+.btn-brand {
+  background-color: var(--rf-brand);
+  transition: all 0.3s ease;
+}
+
+.btn-brand:hover {
+  transform: translateY(-5px);
+}
+
+.section-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.section-title{
+  max-width: 550px;
+  margin: 0 auto 60px auto;
+}
+
+.section-title .line {
+  width: 200px;
+  height: 2px;
+  background-color: var(--rf-brand);
+  display: inline-block;
+}
+
+.about-icon {
+  width: 60px;
+  height: 60px;
+  background-color: var(--rf-brand);
+  color: white;
+  font-size: 70px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project {
+  overflow: hidden;
+  position: relative;
+}
+
+.project img {
+    width: 100%;
+    display: block;
+}
+
+.edu {
+  position: relative;
+}
+
+.edu::before {
+  content:'';
+  height: 100%;
+  width: 1px;
+  background-color: rgba(var(--rf-brand-rgb), 0.4);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.edu::after {
+  content: '';
+  height: 15px;
+  width: 15px;
+  background-color: var(--rf-brand);
+  position: absolute;
+  top: 0;
+  left: -7px;
+}
+
+#contact .form-control {
+  border-radius: 0;
+  
+}
+
+#contact .form-control:focus{
+  box-shadow: none;
+  border-color: var(--rf-brand);
+}
+
+#contact input.form-control{
+  height: 40px;
+}
+
+footer {
+  background-color: var(--rf-dark);
+padding-top:85px ;
+  
+}
+
+footer h4{
+  color: white;
+}
+
+footer p,
+footer li,
+footer li a {
+  color: rgba(255,255,255,0.7);
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-top {
+  padding-bottom: 40px;
+  border-bottom: 1px rgba(255,255,255,0.2);
+}
+
+.footer-bottom {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.berita{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.berita img{
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.isi h3{
+    margin: 0;
+    font-size: 20px;
+}
+
+.isi a{
+    text-decoration: none;
+    color: black;
+}
+
+.isi a:hover{
+    color: orange;
+}
+
+.isi p{
+    color: gray;
+    margin-top: 8px;
+}
+
+.berita{
+    margin: 30px 0;
+    padding-bottom: 20px;
+}
+.isi{
+    flex: 1;
+}
+
+.berita img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.hr{
+  margin: 20px 0;
+}
+
+.artikel p{
+    font-size:17px;
+    line-height:1.8;
+    text-align:justify;
+    margin-bottom:15px;
+    margin-top: 15px;
+}
+
+.judul{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.tanggal{
+    color: gray;
+    font-size: 14px;
+}
+
+.gambar{
+    width: 100%;
+    max-width:700px ;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+
+.kembali{
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+.artikel{
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.navigasi{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.navigasi a{
+    background: #FFA500;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navigasi a:hover{
+    background: #e69500;
+}
+
+.kategori-container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.kategori-judul{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.kategori-deskripsi{
+    text-align: center;
+    color: var(--rf-body);
+    margin-bottom: 50px;
+}
+
+.kategori-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.kategori-card{
+    border: 1px solid #ddd;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 10px;
+    background: white;
+}
+
+.kategori-icon{
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    background: var(--rf-brand);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    border-radius: 10px;
+}
+
+.kategori-card h2{
+    margin-bottom: 10px;
+}
+
+.kategori-card p{
+    color: var(--rf-body);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.kategori-card a{
+    display: inline-block;
+    background: var(--rf-brand);
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.kategori-card a:hover{
+    background: #e69500;
+}
+
+.kembali-kategori{
+    display: block;
+    width: fit-content;
+    margin: 40px auto 0;
+    text-decoration: none;
+    color: var(--rf-dark);
+    font-weight: 600;
+}
+
+.artikel-populer img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.artikel-populer h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.artikel-populer p {
+    color: var(--rf-body);
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.artikel-populer a {
+    color: var(--rf-brand);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.artikel-populer a:hover {
+    color: #e69500;
+}
+
+.judul-artikel,
+.judul-artikel:visited,
+.judul-artikel:hover,
+.judul-artikel:active {
+    color: var(--rf-dark) !important;
+    text-decoration: none !important;
+}
+
+.manfaat {
+  color: #212237;
+  font-size: 20px ! important ;
+  font-weight: 800;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.teks-pekat {
+  color: #212237;
+  font-weight: 600;
+  font-size: 17px ! important;
+}
+
+.isi-manfaat {
+  margin-bottom: 0px;
+}
+
+figure {
+  margin: 20px 0;
+}
+
+figure .gambar {
+  width: 100%;
+  display: block;
+}
+
+figcaption {
+  font-size: 12px;
+  color: #777;
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+.container > h1 {
+  text-align: center;
+  padding: 40px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-right: 8px;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: 600;
+    color: hwb(16 9% 3% / 0.8784313725490196);
+    text-decoration: none;
+}
+
+.nusa {
+    color: var(--rf-brand);
+}
+
+@media (max-width: 991px) {
+
+  .navbar {
+    padding: 12px 0;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .navbar-collapse {
+    margin-top: 10px;
+    padding: 10px 0 5px;
+  }
+
+  .navbar-nav {
+    gap: 0;
+  }
+
+  .navbar .nav-link {
+    color: white;
+    padding: 10px 0;
+    font-size: 16px;
+  }
+
+  .navbar-toggler {
+    border: 2px solid rgba(255,255,255,0.5);
+    padding: 6px 9px;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  .navbar-toggler-icon {
+    filter: invert(1);
+  }
+}
+
+
+
+@media (max-width: 767px) {
+
+  #home {
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  #home h1 {
+    font-size: 42px;
+    line-height: 1.15;
+  }
+
+  #home h4 {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-top: 25px !important;
+  }
+
+  #home .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  #home .btn-brand {
+    font-size: 16px;
+    padding: 10px 18px;
+  }
+
+  .berita {
+        flex-direction: column;
+    }
+
+    .berita img {
+        width: 100%;
+        height: auto;
+    }
+
+    .isi {
+        width: 100%;
+    }
+  
+  .kategori-list {
+    grid-template-columns: 1fr;
+  }
+
+   .artikel {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .artikel .judul {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .artikel p {
+    font-size: 16px !important;
+    line-height: 1.7;
+    text-align: left;
+    margin: 15px 0;
+  }
+
+  .artikel .gambar {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  figure {
+    margin: 20px 0;
+  }
+
+  figcaption {
+    font-size: 12px;
+  }
+
+    .headline-utama {
+      height: 600px;
+  }
+
+  .headline-content {
+      left: 25px;
+      right: 25px;
+      bottom: 30px;
+  }
+
+  .headline-content h2 {
+      font-size: 30px;
+      line-height: 1.25;
+  }
+
+  .headline-content p {
+      font-size: 15px;
+      line-height: 1.5;
+  }
+
+}
+
+/* =========================
+   HEADLINE + TERPOPULER
+========================= */
+
+.headline-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+
+/* =========================
+   HEADLINE
+========================= */
+
+.headline-utama {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #212237;
+}
+
+.headline-utama img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.headline-utama::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.85),
+        rgba(0, 0, 0, 0.1)
+    );
+}
+
+.headline-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.headline-content {
+    position: absolute;
+    z-index: 2;
+    left: 40px;
+    right: 40px;
+    bottom: 35px;
+    max-width: 750px;
+    color: white;
+}
+
+.headline-content span {
+    display: inline-block;
+    background: var(--rf-brand);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.headline-content h2 {
+    color: white !important;
+    font-size: 36px;
+    line-height: 1.25;
+    margin-bottom: 10px;
+}
+
+.headline-content p {
+    color: rgba(255,255,255,0.9) !important;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.headline-baca {
+    color: white !important;
+    background: var(--rf-brand);
+    padding: 7px 12px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   TERPOPULER
+========================= */
+
+.terpopuler {
+    background: white;
+}
+
+.terpopuler h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--rf-brand);
+}
+
+.populer-item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 18px 0;
+    border-bottom: 1px solid #ddd;
+    text-decoration: none;
+    color: var(--rf-dark);
+}
+
+.populer-item > span {
+    min-width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--rf-brand);
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.populer-item h3 {
+    font-size: 17px;
+    line-height: 1.4;
+    margin: 0 0 5px;
+    color: var(--rf-dark);
+}
+
+.populer-item p {
+    margin: 0;
+    color: var(--rf-body);
+    font-size: 14px;
+}
+
+.populer-item:hover h3 {
+    color: var(--rf-brand);
+}
+
+/* =========================
+   ARTIKEL KATEGORI - 3 KOLOM
+========================= */
+
+#kategori .artikel-populer {
+    font-size: 14px;
+}
+
+#kategori .artikel-populer img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+
+#kategori .artikel-populer h5 {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 7px;
+    color: var(--rf-dark);
+}
+
+#kategori .artikel-populer p {
+    color: var(--rf-body);
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+#kategori .artikel-populer > a {
+    color: var(--rf-brand);
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#kategori .artikel-populer > a:hover {
+    color: #e69500;
+}
+
+
+/* =========================
+   TERPOPULER ARTIKEL
+========================= */
+
+.terpopuler-artikel {
+    padding-left: 10px;
+}
+
+.terpopuler-artikel h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 991px) {
+
+    #kategori .artikel-populer img {
+        height: 140px;
+    }
+
+    #kategori .artikel-populer h5 {
+        font-size: 15px;
+    }
+
+}
+
+
+/* =========================
+   HP
+========================= */
+
+@media (max-width: 767px) {
+
+    #kategori .artikel-populer img {
+        height: 180px;
+    }
+
+    #kategori .artikel-populer h5 {
+        font-size: 16px;
+    }
+
+    #kategori .artikel-populer p {
+        font-size: 13px;
+    }
+
+  .terpopuler {
+        margin-top: 40px;
+    }
+
+    .terpopuler h2 {
+        margin-bottom: 30px;
+    }
+}
+
+/* =========================
+   HEADLINE HP
+========================= */
+@media (max-width: 767px) {
+
+  .headline-utama {
+    height: 380px;
+  }
+
+  .headline-content {
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .headline-content h2 {
+    font-size: 22px !important;
+    line-height: 1.25;
+  }
+
+  .headline-content p {
+    font-size: 12px !important;
+    line-height: 1.4;
+  }
+
+  .headline-content span {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+
+  .headline-baca {
+    font-size: 11px;
+    padding: 7px 10px;
+  }
+
+}
+
+/* =========================
+   ARTIKEL 2 KOLOM DI HP
+========================= */
+
+@media (max-width: 767px) {
+
+  #kategori .row.g-4 > .col-sm-6 {
+    width: 50% !important;
+    flex: 0 0 50% !important;
+  }
+
+  #kategori .row.g-4 {
+    --bs-gutter-x: 16px;
+    --bs-gutter-y: 30px;
+  }
+
+  .artikel-populer img {
+    width: 100% !important;
+    height: 105px !important;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+  }
+
+  .artikel-populer h5 {
+    font-size: 18px;
+    line-height: 1.3;
+    margin-top: 12px;
+  }
+
+  .artikel-populer p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .artikel-populer > a {
+    font-size: 14px;
+  }
+
+}
+
+/* =========================
+   SOROTAN
+========================= */
+
+.rekomendasi-card {
+  height: 100%;
+  overflow: hidden;
+}
+
+.rekomendasi-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+.rekomendasi-content {
+  padding-top: 12px;
+}
+
+.rekomendasi-content h5 {
+  font-size: 20px;
+  line-height: 1.3;
+  margin: 8px 0;
+}
+
+.rekomendasi-content h5 a {
+  text-decoration: none;
+  color: #222;
+}
+
+.rekomendasi-content p {
+  color: #888;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.rekomendasi-link {
+  color: #f5a623;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 992px) {
+
+  .rekomendasi-card img {
+    height: 180px;
+  }
+
+  .rekomendasi-content h5 {
+    font-size: 21px;
+  }
+
+}
+
+
+/* =========================
+   HP
+========================= */
+
+@media (max-width: 767px) {
+
+  .rekomendasi-card img {
+    height: 150px;
+  }
+
+  .rekomendasi-content h5 {
+    font-size: 18px;
+    line-height: 1.35;
+  }
+
+  .rekomendasi-content p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+}
